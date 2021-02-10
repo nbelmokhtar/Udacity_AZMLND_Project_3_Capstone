@@ -17,7 +17,7 @@ def clean_data(data):
     
     return x_df, y_df
     
-dataset_url="https://github.com/nbelmokhtar/Udacity_AZMLND_Project_3_Capstone/blob/master/starter_file/heart_failure_clinical_records_dataset.csv"
+dataset_url="https://raw.githubusercontent.com/nbelmokhtar/Udacity_AZMLND_Project_3_Capstone/master/starter_file/heart_failure_clinical_records_dataset.csv"
 ds = TabularDatasetFactory.from_delimited_files(path=dataset_url) 
 
 # Clean Data    

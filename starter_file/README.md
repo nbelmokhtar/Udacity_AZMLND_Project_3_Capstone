@@ -28,18 +28,18 @@ Dataset from Davide Chicco, Giuseppe Jurman: Machine learning can predict surviv
 
 Heart failure is a common event caused by Cardiovascular diseases (CVDs) and this dataset contains 12 features :
 
-01- age : Age of the patient (years) 
-<br> 02- anaemia : Decrease of red blood cells or hemoglobin (boolean)<br/> 
-03- creatinine_phosphokinase : Level of the CPK enzyme in the blood (mcg/L) 
-04- diabetes : If the patient has diabetes (boolean) 
-05- ejection_fraction : Percentage of blood leaving the heart at each contraction (percentage) 
-06- high_blood_pressure : If the patient has hypertension (boolean) 
-07- platelets : Platelets in the blood (kiloplatelets/mL) 
-08- serum_creatinine : Level of serum creatinine in the blood (mg/dL) 
-09- serum_sodium :Level of serum sodium in the blood (mEq/L) 
-10- sex : Woman or man (binary) 
-11- smoking : If the patient smokes or not (boolean) 
-12- time : Follow-up period (days)
+01- 'age' : Age of the patient (years)<br/> 
+02- anaemia : Decrease of red blood cells or hemoglobin (boolean)<br/> 
+03- creatinine_phosphokinase : Level of the CPK enzyme in the blood (mcg/L)<br/> 
+04- diabetes : If the patient has diabetes (boolean)<br/> 
+05- ejection_fraction : Percentage of blood leaving the heart at each contraction (percentage)<br/> 
+06- high_blood_pressure : If the patient has hypertension (boolean)<br/> 
+07- platelets : Platelets in the blood (kiloplatelets/mL)<br/> 
+08- serum_creatinine : Level of serum creatinine in the blood (mg/dL)<br/> 
+09- serum_sodium :Level of serum sodium in the blood (mEq/L)<br/> 
+10- sex : Woman or man (binary)<br/> 
+11- smoking : If the patient smokes or not (boolean)<br/> 
+12- time : Follow-up period (days)<br/>
 
 These 12 feaytures are used to predict mortality by heart failure indicated by a boolean value : DEATH_EVENT.
  

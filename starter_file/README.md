@@ -57,7 +57,19 @@ We used 2 ways to access the data in the workspace :
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot 
+
+
+
+AutoML tries different models and algorithms during the automation and tuning process within a short period of time. The best performing model was Voting Ensemble with an accuracy of 87.62%. 
+
+![RunDetails 01](https://github.com/nbelmokhtar/Udacity_AZMLND_Project_3_Capstone/blob/master/starter_file/screenshots/automl/001.PNG)
+![RunDetails 02](https://github.com/nbelmokhtar/Udacity_AZMLND_Project_3_Capstone/blob/master/starter_file/screenshots/automl/002.PNG)
+![RunDetails 03](https://github.com/nbelmokhtar/Udacity_AZMLND_Project_3_Capstone/blob/master/starter_file/screenshots/automl/003.PNG)
+
+of the best model trained with it's parameters.
+
+
 
 ## Hyperparameter Tuning
 *TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search

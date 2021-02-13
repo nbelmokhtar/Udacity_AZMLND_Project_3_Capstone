@@ -46,7 +46,7 @@ data = {
 
 body = str.encode(json.dumps(data))
 
-url = 'http://d31eb118-db76-45d2-a8bf-6054fa981909.southcentralus.azurecontainer.io/score'
+url = 'http://97794ab3-9cbe-4a65-a0c4-eca9b82214a4.southcentralus.azurecontainer.io/score'
 api_key = '' # Replace this with the API key for the web service
 headers = {'Content-Type':'application/json', 'Authorization':('Bearer '+ api_key)}
 

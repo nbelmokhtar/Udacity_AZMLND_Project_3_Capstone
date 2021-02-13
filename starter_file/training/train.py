@@ -16,7 +16,7 @@ def clean_data(data):
     y_df = x_df.pop("DEATH_EVENT")
     
     return x_df, y_df
-
+    
 dataset_url="https://raw.githubusercontent.com/nbelmokhtar/Udacity_AZMLND_Project_3_Capstone/master/starter_file/heart_failure_clinical_records_dataset.csv"
 ds = TabularDatasetFactory.from_delimited_files(path=dataset_url) 
 

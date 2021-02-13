@@ -29,7 +29,7 @@ Dataset from Davide Chicco, Giuseppe Jurman: Machine learning can predict surviv
 Heart failure is a common event caused by Cardiovascular diseases (CVDs) and this dataset contains 12 features :
 
 01- age : Age of the patient (years) 
-\n02- anaemia : Decrease of red blood cells or hemoglobin (boolean) 
+<br> 02- anaemia : Decrease of red blood cells or hemoglobin (boolean)<br/> 
 03- creatinine_phosphokinase : Level of the CPK enzyme in the blood (mcg/L) 
 04- diabetes : If the patient has diabetes (boolean) 
 05- ejection_fraction : Percentage of blood leaving the heart at each contraction (percentage) 

@@ -2,10 +2,9 @@
 
 This project is built as a part of the Machine Learning Engineer for Microsoft Azure Nanodegree Program on Udacity. In this project, we created two models: one using Automated ML (AutoML) and a Scikit-learn Logistic Regression model whose hyperparameters are tuned using HyperDrive. Then, we compared the performance of both the models and deployed the best performing model as a web service.
 
-![Capstone Diagram](https://github.com/nbelmokhtar/Udacity_AZMLND_Project_3_Capstone/blob/master/starter_file/screenshots/capstone-diagram.png)
+The diagram below shows the main steps followed to complete this project.
 
-## Project Set Up and Installation
-*OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
+![Capstone Diagram](https://github.com/nbelmokhtar/Udacity_AZMLND_Project_3_Capstone/blob/master/starter_file/screenshots/capstone-diagram.png)
 
 ## Dataset
 

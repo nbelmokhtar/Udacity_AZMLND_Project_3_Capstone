@@ -1,5 +1,5 @@
+
 Current status: FeaturesGeneration. Generating features for the dataset.
-Current status: DatasetCrossValidationSplit. Beginning model selection.
 Current status: ModelSelection. Beginning model selection.
 
 ****************************************************************************************************
@@ -48,56 +48,49 @@ BEST: The best observed score thus far.
 ****************************************************************************************************
 
  ITERATION   PIPELINE                                       DURATION      METRIC      BEST
-         0   MaxAbsScaler LightGBM                          0:00:56       0.8360    0.8360
-         3   MinMaxScaler RandomForest                      0:00:57       0.8392    0.8392
-         1   MaxAbsScaler XGBoostClassifier                 0:02:25       0.8359    0.8392
-         2   MinMaxScaler RandomForest                      0:00:58       0.8362    0.8392
-         4   MinMaxScaler RandomForest                      0:01:02       0.8222    0.8392
-         7   MinMaxScaler SVM                               0:01:06       0.7259    0.8392
-         8   SparseNormalizer XGBoostClassifier             0:01:07       0.8229    0.8392
-         5   RobustScaler LightGBM                          0:02:31       0.8459    0.8459
-         6   RobustScaler LightGBM                          0:02:36       0.8492    0.8492
-         9   MaxAbsScaler GradientBoosting                  0:01:04       0.8425    0.8492
-        10   SparseNormalizer LightGBM                      0:01:01       0.8329    0.8492
-        11   StandardScalerWrapper RandomForest             0:01:01       0.8426    0.8492
-        12   StandardScalerWrapper LightGBM                 0:00:53       0.7392    0.8492
-        13   MaxAbsScaler LightGBM                          0:00:51       0.8293    0.8492
-        14   RobustScaler ExtremeRandomTrees                0:01:05       0.8494    0.8494
-        16   StandardScalerWrapper LightGBM                 0:00:59       0.8226    0.8494
-        15   StandardScalerWrapper RandomForest             0:01:23       0.8393    0.8494
-        17   MinMaxScaler LightGBM                          0:01:09       0.8426    0.8494
-        18   StandardScalerWrapper XGBoostClassifier        0:00:58       0.8293    0.8494
-        19   StandardScalerWrapper LightGBM                 0:01:05       0.8260    0.8494
-        21   MinMaxScaler LightGBM                          0:01:04       0.8093    0.8494
-        22   MinMaxScaler LightGBM                          0:00:51       0.8026    0.8494
-        20   MaxAbsScaler LightGBM                          0:01:41       0.7757    0.8494
-        23   MaxAbsScaler LightGBM                          0:01:20       0.8160    0.8494
-        24   RobustScaler LightGBM                          0:00:56       0.7794    0.8494
-        25   MaxAbsScaler ExtremeRandomTrees                0:00:52       0.5441    0.8494
-        26   SparseNormalizer XGBoostClassifier             0:00:52       0.8697    0.8697
-        27   MaxAbsScaler RandomForest                      0:00:52       0.8257    0.8697
-        28   SparseNormalizer RandomForest                  0:01:02       0.8163    0.8697
-        29   StandardScalerWrapper RandomForest             0:00:56       0.8428    0.8697
-        30   StandardScalerWrapper XGBoostClassifier        0:01:01       0.6792    0.8697
-        31   SparseNormalizer LightGBM                      0:00:55       0.8229    0.8697
-        32   SparseNormalizer LightGBM                      0:00:51       0.8494    0.8697
-        33   StandardScalerWrapper LightGBM                 0:00:58       0.8259    0.8697
-        34   MaxAbsScaler LightGBM                          0:01:02       0.8293    0.8697
-        35   StandardScalerWrapper XGBoostClassifier        0:01:03       0.8526    0.8697
-        36   StandardScalerWrapper LightGBM                 0:00:52       0.8529    0.8697
-        37   StandardScalerWrapper XGBoostClassifier        0:00:55       0.8059    0.8697
-        38   StandardScalerWrapper XGBoostClassifier        0:00:54       0.8394    0.8697
-        39   StandardScalerWrapper XGBoostClassifier        0:01:01       0.8259    0.8697
-        40   StandardScalerWrapper XGBoostClassifier        0:00:56       0.8426    0.8697
-        41   StandardScalerWrapper LightGBM                 0:00:54       0.8392    0.8697
-        42   MaxAbsScaler LightGBM                          0:00:34       0.8393    0.8697
-        43    VotingEnsemble                                0:02:17       0.8797    0.8797
-        44    StackEnsemble                                 0:02:44       0.8763    0.8797
-{'runId': 'AutoML_415e87b7-c932-44e2-9303-71d0e67f8df7',
+         0   MaxAbsScaler LightGBM                          0:00:49       0.8360    0.8360
+         1   MaxAbsScaler XGBoostClassifier                 0:00:54       0.8359    0.8360
+         2   MinMaxScaler RandomForest                      0:00:55       0.8595    0.8595
+         3   MinMaxScaler RandomForest                      0:00:56       0.8325    0.8595
+         7   MinMaxScaler SVM                               0:00:50       0.7329    0.8595
+         4   MinMaxScaler RandomForest                      0:02:27       0.8391    0.8595
+         5   SparseNormalizer XGBoostClassifier             0:02:23       0.8392    0.8595
+         6   StandardScalerWrapper XGBoostClassifier        0:02:22       0.8426    0.8595
+         8   MaxAbsScaler GradientBoosting                  0:00:49       0.8426    0.8595
+        10   SparseNormalizer XGBoostClassifier             0:00:50       0.8093    0.8595
+         9   StandardScalerWrapper LightGBM                 0:00:52       0.8325    0.8595
+        11   MinMaxScaler LightGBM                          0:00:52       0.8026    0.8595
+        12   SparseNormalizer LightGBM                      0:00:59       0.7560    0.8595
+        14   StandardScalerWrapper XGBoostClassifier        0:00:51       0.8195    0.8595
+        13   SparseNormalizer XGBoostClassifier             0:00:54       0.8495    0.8595
+        15   StandardScalerWrapper RandomForest             0:00:50       0.8293    0.8595
+        16   SparseNormalizer XGBoostClassifier             0:00:51       0.8492    0.8595
+        17   SparseNormalizer XGBoostClassifier             0:00:49       0.8362    0.8595
+        18   MaxAbsScaler LightGBM                          0:00:49       0.8393    0.8595
+        19   StandardScalerWrapper ExtremeRandomTrees       0:00:47       0.8429    0.8595
+        20   SparseNormalizer XGBoostClassifier             0:00:49       0.8331    0.8595
+        21   RobustScaler GradientBoosting                  0:00:55       0.8328    0.8595
+        22   RobustScaler LightGBM                          0:00:51       0.8425    0.8595
+        23   TruncatedSVDWrapper RandomForest               0:00:51       0.7789    0.8595
+        24   MaxAbsScaler ExtremeRandomTrees                0:00:54       0.8429    0.8595
+        25   MaxAbsScaler RandomForest                      0:00:52       0.7321    0.8595
+        26   MinMaxScaler LightGBM                          0:00:49       0.7993    0.8595
+        27   MaxAbsScaler ExtremeRandomTrees                0:00:51       0.7994    0.8595
+        28   MaxAbsScaler LightGBM                          0:00:48       0.8495    0.8595
+        29   MaxAbsScaler LightGBM                          0:00:48       0.8495    0.8595
+        31   MinMaxScaler LogisticRegression                0:00:48       0.8225    0.8595
+        32   MaxAbsScaler LightGBM                          0:00:48       0.8493    0.8595
+        30   MaxAbsScaler RandomForest                      0:00:52       0.8360    0.8595
+        33                                                  0:00:18          nan    0.8595
+        34                                                  0:00:18          nan    0.8595
+        35                                                  0:00:16          nan    0.8595
+        36    VotingEnsemble                                0:01:57       0.8762    0.8762
+        37    StackEnsemble                                 0:01:55       0.8562    0.8762
+{'runId': 'AutoML_bad8b7b1-697e-402a-91c9-8730f9b52493',
  'target': 'my-cpu-cluster',
  'status': 'Completed',
- 'startTimeUtc': '2021-02-12T02:42:56.837842Z',
- 'endTimeUtc': '2021-02-12T03:05:21.070692Z',
+ 'startTimeUtc': '2021-02-13T00:45:34.39659Z',
+ 'endTimeUtc': '2021-02-13T01:08:03.154766Z',
  'properties': {'num_iterations': '1000',
   'training_type': 'TrainFull',
   'acquisition_function': 'EI',
@@ -106,8 +99,8 @@ BEST: The best observed score thus far.
   'acquisition_parameter': '0',
   'num_cross_validation': None,
   'target': 'my-cpu-cluster',
-  'AMLSettingsJsonString': '{"path":null,"name":"automl_heart_failure_experiment","subscription_id":"976ee174-3882-4721-b90a-b5fef6b72f24","resource_group":"aml-quickstarts-138652","workspace_name":"quick-starts-ws-138652","region":"southcentralus","compute_target":"my-cpu-cluster","spark_service":null,"azure_service":"remote","many_models":false,"pipeline_fetch_max_batch_size":1,"iterations":1000,"primary_metric":"accuracy","task_type":"classification","data_script":null,"validation_size":0.0,"n_cross_validations":null,"y_min":null,"y_max":null,"num_classes":null,"featurization":"auto","_ignore_package_version_incompatibilities":false,"is_timeseries":false,"max_cores_per_iteration":1,"max_concurrent_iterations":4,"iteration_timeout_minutes":null,"mem_in_mb":null,"enforce_time_on_windows":false,"experiment_timeout_minutes":30,"experiment_exit_score":null,"whitelist_models":null,"blacklist_algos":["TensorFlowLinearClassifier","TensorFlowDNN"],"supported_models":["GradientBoosting","BernoulliNaiveBayes","LogisticRegression","LinearSVM","TensorFlowDNN","TensorFlowLinearClassifier","AveragedPerceptronClassifier","MultinomialNaiveBayes","ExtremeRandomTrees","XGBoostClassifier","KNN","RandomForest","SGD","SVM","DecisionTree","LightGBM"],"auto_blacklist":true,"blacklist_samples_reached":false,"exclude_nan_labels":true,"verbosity":20,"_debug_log":"azureml_automl.log","show_warnings":false,"model_explainability":true,"service_url":null,"sdk_url":null,"sdk_packages":null,"enable_onnx_compatible_models":false,"enable_split_onnx_featurizer_estimator_models":false,"vm_type":"STANDARD_D3_V2","telemetry_verbosity":20,"send_telemetry":true,"enable_dnn":false,"scenario":"SDK-1.13.0","environment_label":null,"force_text_dnn":false,"enable_feature_sweeping":true,"enable_early_stopping":true,"early_stopping_n_iters":10,"metrics":null,"enable_ensembling":true,"enable_stack_ensembling":true,"ensemble_iterations":15,"enable_tf":false,"enable_subsampling":null,"subsample_seed":null,"enable_nimbusml":false,"enable_streaming":false,"force_streaming":false,"track_child_runs":true,"allowed_private_models":[],"label_column_name":"DEATH_EVENT","weight_column_name":null,"cv_split_column_names":null,"enable_local_managed":false,"_local_managed_run_id":null,"cost_mode":1,"lag_length":0,"metric_operation":"maximize","preprocess":true}',
-  'DataPrepJsonString': '{\\"training_data\\": \\"{\\\\\\"blocks\\\\\\": [{\\\\\\"id\\\\\\": \\\\\\"45e12751-b944-494f-9a2d-1bfb2673fb6e\\\\\\", \\\\\\"type\\\\\\": \\\\\\"Microsoft.DPrep.GetDatastoreFilesBlock\\\\\\", \\\\\\"arguments\\\\\\": {\\\\\\"datastores\\\\\\": [{\\\\\\"datastoreName\\\\\\": \\\\\\"workspaceblobstore\\\\\\", \\\\\\"path\\\\\\": \\\\\\"UI/02-12-2021_023204_UTC/heart_failure_clinical_records_dataset.csv\\\\\\", \\\\\\"resourceGroup\\\\\\": \\\\\\"aml-quickstarts-138652\\\\\\", \\\\\\"subscription\\\\\\": \\\\\\"976ee174-3882-4721-b90a-b5fef6b72f24\\\\\\", \\\\\\"workspaceName\\\\\\": \\\\\\"quick-starts-ws-138652\\\\\\"}]}, \\\\\\"localData\\\\\\": {}, \\\\\\"isEnabled\\\\\\": true, \\\\\\"name\\\\\\": null, \\\\\\"annotation\\\\\\": null}, {\\\\\\"id\\\\\\": \\\\\\"c9a41d09-2109-4cdf-ae0b-8227d6033236\\\\\\", \\\\\\"type\\\\\\": \\\\\\"Microsoft.DPrep.ParseDelimitedBlock\\\\\\", \\\\\\"arguments\\\\\\": {\\\\\\"columnHeadersMode\\\\\\": 1, \\\\\\"fileEncoding\\\\\\": 0, \\\\\\"handleQuotedLineBreaks\\\\\\": false, \\\\\\"preview\\\\\\": false, \\\\\\"separator\\\\\\": \\\\\\",\\\\\\", \\\\\\"skipRows\\\\\\": 0, \\\\\\"skipRowsMode\\\\\\": 0}, \\\\\\"localData\\\\\\": {}, \\\\\\"isEnabled\\\\\\": true, \\\\\\"name\\\\\\": null, \\\\\\"annotation\\\\\\": null}, {\\\\\\"id\\\\\\": \\\\\\"d9351cf5-b52a-4c1e-981a-4e2839c6f435\\\\\\", \\\\\\"type\\\\\\": \\\\\\"Microsoft.DPrep.DropColumnsBlock\\\\\\", \\\\\\"arguments\\\\\\": {\\\\\\"columns\\\\\\": {\\\\\\"type\\\\\\": 0, \\\\\\"details\\\\\\": {\\\\\\"selectedColumns\\\\\\": [\\\\\\"Path\\\\\\"]}}}, \\\\\\"localData\\\\\\": {}, \\\\\\"isEnabled\\\\\\": true, \\\\\\"name\\\\\\": null, \\\\\\"annotation\\\\\\": null}, {\\\\\\"id\\\\\\": \\\\\\"a2391912-5c49-4997-b38d-ee405ed568bb\\\\\\", \\\\\\"type\\\\\\": \\\\\\"Microsoft.DPrep.SetColumnTypesBlock\\\\\\", \\\\\\"arguments\\\\\\": {\\\\\\"columnConversion\\\\\\": [{\\\\\\"column\\\\\\": {\\\\\\"type\\\\\\": 2, \\\\\\"details\\\\\\": {\\\\\\"selectedColumn\\\\\\": \\\\\\"Path\\\\\\"}}, \\\\\\"typeProperty\\\\\\": 0}, {\\\\\\"column\\\\\\": {\\\\\\"type\\\\\\": 2, \\\\\\"details\\\\\\": {\\\\\\"selectedColumn\\\\\\": \\\\\\"age\\\\\\"}}, \\\\\\"typeProperty\\\\\\": 3}, {\\\\\\"column\\\\\\": {\\\\\\"type\\\\\\": 2, \\\\\\"details\\\\\\": {\\\\\\"selectedColumn\\\\\\": \\\\\\"anaemia\\\\\\"}}, \\\\\\"typeProperty\\\\\\": 2}, {\\\\\\"column\\\\\\": {\\\\\\"type\\\\\\": 2, \\\\\\"details\\\\\\": {\\\\\\"selectedColumn\\\\\\": \\\\\\"creatinine_phosphokinase\\\\\\"}}, \\\\\\"typeProperty\\\\\\": 2}, {\\\\\\"column\\\\\\": {\\\\\\"type\\\\\\": 2, \\\\\\"details\\\\\\": {\\\\\\"selectedColumn\\\\\\": \\\\\\"diabetes\\\\\\"}}, \\\\\\"typeProperty\\\\\\": 2}, {\\\\\\"column\\\\\\": {\\\\\\"type\\\\\\": 2, \\\\\\"details\\\\\\": {\\\\\\"selectedColumn\\\\\\": \\\\\\"ejection_fraction\\\\\\"}}, \\\\\\"typeProperty\\\\\\": 2}, {\\\\\\"column\\\\\\": {\\\\\\"type\\\\\\": 2, \\\\\\"details\\\\\\": {\\\\\\"selectedColumn\\\\\\": \\\\\\"high_blood_pressure\\\\\\"}}, \\\\\\"typeProperty\\\\\\": 2}, {\\\\\\"column\\\\\\": {\\\\\\"type\\\\\\": 2, \\\\\\"details\\\\\\": {\\\\\\"selectedColumn\\\\\\": \\\\\\"platelets\\\\\\"}}, \\\\\\"typeProperty\\\\\\": 3}, {\\\\\\"column\\\\\\": {\\\\\\"type\\\\\\": 2, \\\\\\"details\\\\\\": {\\\\\\"selectedColumn\\\\\\": \\\\\\"serum_creatinine\\\\\\"}}, \\\\\\"typeProperty\\\\\\": 3}, {\\\\\\"column\\\\\\": {\\\\\\"type\\\\\\": 2, \\\\\\"details\\\\\\": {\\\\\\"selectedColumn\\\\\\": \\\\\\"serum_sodium\\\\\\"}}, \\\\\\"typeProperty\\\\\\": 2}, {\\\\\\"column\\\\\\": {\\\\\\"type\\\\\\": 2, \\\\\\"details\\\\\\": {\\\\\\"selectedColumn\\\\\\": \\\\\\"sex\\\\\\"}}, \\\\\\"typeProperty\\\\\\": 2}, {\\\\\\"column\\\\\\": {\\\\\\"type\\\\\\": 2, \\\\\\"details\\\\\\": {\\\\\\"selectedColumn\\\\\\": \\\\\\"smoking\\\\\\"}}, \\\\\\"typeProperty\\\\\\": 2}, {\\\\\\"column\\\\\\": {\\\\\\"type\\\\\\": 2, \\\\\\"details\\\\\\": {\\\\\\"selectedColumn\\\\\\": \\\\\\"time\\\\\\"}}, \\\\\\"typeProperty\\\\\\": 2}, {\\\\\\"column\\\\\\": {\\\\\\"type\\\\\\": 2, \\\\\\"details\\\\\\": {\\\\\\"selectedColumn\\\\\\": \\\\\\"DEATH_EVENT\\\\\\"}}, \\\\\\"typeProperty\\\\\\": 2}]}, \\\\\\"localData\\\\\\": {}, \\\\\\"isEnabled\\\\\\": true, \\\\\\"name\\\\\\": null, \\\\\\"annotation\\\\\\": null}], \\\\\\"inspectors\\\\\\": [], \\\\\\"meta\\\\\\": {\\\\\\"savedDatasetId\\\\\\": \\\\\\"9f6dcf6e-65fb-4f2a-bdba-acb22ddfe91e\\\\\\", \\\\\\"datasetType\\\\\\": \\\\\\"tabular\\\\\\", \\\\\\"subscriptionId\\\\\\": \\\\\\"976ee174-3882-4721-b90a-b5fef6b72f24\\\\\\", \\\\\\"workspaceId\\\\\\": \\\\\\"c58d1604-63d7-49d1-bcd4-3d0bdaa6fdee\\\\\\", \\\\\\"workspaceLocation\\\\\\": \\\\\\"southcentralus\\\\\\"}}\\", \\"activities\\": 0}',
+  'AMLSettingsJsonString': '{"path":null,"name":"automl_heart_failure_experiment","subscription_id":"a0a76bad-11a1-4a2d-9887-97a29122c8ed","resource_group":"aml-quickstarts-138754","workspace_name":"quick-starts-ws-138754","region":"southcentralus","compute_target":"my-cpu-cluster","spark_service":null,"azure_service":"remote","many_models":false,"pipeline_fetch_max_batch_size":1,"iterations":1000,"primary_metric":"accuracy","task_type":"classification","data_script":null,"validation_size":0.0,"n_cross_validations":null,"y_min":null,"y_max":null,"num_classes":null,"featurization":"auto","_ignore_package_version_incompatibilities":false,"is_timeseries":false,"max_cores_per_iteration":1,"max_concurrent_iterations":4,"iteration_timeout_minutes":null,"mem_in_mb":null,"enforce_time_on_windows":false,"experiment_timeout_minutes":30,"experiment_exit_score":null,"whitelist_models":null,"blacklist_algos":["TensorFlowLinearClassifier","TensorFlowDNN"],"supported_models":["SGD","TensorFlowLinearClassifier","BernoulliNaiveBayes","AveragedPerceptronClassifier","XGBoostClassifier","TensorFlowDNN","LogisticRegression","MultinomialNaiveBayes","KNN","RandomForest","DecisionTree","ExtremeRandomTrees","LightGBM","SVM","LinearSVM","GradientBoosting"],"auto_blacklist":true,"blacklist_samples_reached":false,"exclude_nan_labels":true,"verbosity":20,"_debug_log":"azureml_automl.log","show_warnings":false,"model_explainability":true,"service_url":null,"sdk_url":null,"sdk_packages":null,"enable_onnx_compatible_models":false,"enable_split_onnx_featurizer_estimator_models":false,"vm_type":"STANDARD_D3_V2","telemetry_verbosity":20,"send_telemetry":true,"enable_dnn":false,"scenario":"SDK-1.13.0","environment_label":null,"force_text_dnn":false,"enable_feature_sweeping":true,"enable_early_stopping":true,"early_stopping_n_iters":10,"metrics":null,"enable_ensembling":true,"enable_stack_ensembling":true,"ensemble_iterations":15,"enable_tf":false,"enable_subsampling":null,"subsample_seed":null,"enable_nimbusml":false,"enable_streaming":false,"force_streaming":false,"track_child_runs":true,"allowed_private_models":[],"label_column_name":"DEATH_EVENT","weight_column_name":null,"cv_split_column_names":null,"enable_local_managed":false,"_local_managed_run_id":null,"cost_mode":1,"lag_length":0,"metric_operation":"maximize","preprocess":true}',
+  'DataPrepJsonString': '{\\"training_data\\": \\"{\\\\\\"blocks\\\\\\": [{\\\\\\"id\\\\\\": \\\\\\"bd93aa91-a5c7-47c1-a4c8-31df9d2c97ae\\\\\\", \\\\\\"type\\\\\\": \\\\\\"Microsoft.DPrep.GetDatastoreFilesBlock\\\\\\", \\\\\\"arguments\\\\\\": {\\\\\\"datastores\\\\\\": [{\\\\\\"datastoreName\\\\\\": \\\\\\"workspaceblobstore\\\\\\", \\\\\\"path\\\\\\": \\\\\\"UI/02-13-2021_124405_UTC/heart_failure_clinical_records_dataset.csv\\\\\\", \\\\\\"resourceGroup\\\\\\": \\\\\\"aml-quickstarts-138754\\\\\\", \\\\\\"subscription\\\\\\": \\\\\\"a0a76bad-11a1-4a2d-9887-97a29122c8ed\\\\\\", \\\\\\"workspaceName\\\\\\": \\\\\\"quick-starts-ws-138754\\\\\\"}]}, \\\\\\"localData\\\\\\": {}, \\\\\\"isEnabled\\\\\\": true, \\\\\\"name\\\\\\": null, \\\\\\"annotation\\\\\\": null}, {\\\\\\"id\\\\\\": \\\\\\"3a72a6b4-d0fa-4a86-9fad-af2e8caf1065\\\\\\", \\\\\\"type\\\\\\": \\\\\\"Microsoft.DPrep.ParseDelimitedBlock\\\\\\", \\\\\\"arguments\\\\\\": {\\\\\\"columnHeadersMode\\\\\\": 1, \\\\\\"fileEncoding\\\\\\": 0, \\\\\\"handleQuotedLineBreaks\\\\\\": false, \\\\\\"preview\\\\\\": false, \\\\\\"separator\\\\\\": \\\\\\",\\\\\\", \\\\\\"skipRows\\\\\\": 0, \\\\\\"skipRowsMode\\\\\\": 0}, \\\\\\"localData\\\\\\": {}, \\\\\\"isEnabled\\\\\\": true, \\\\\\"name\\\\\\": null, \\\\\\"annotation\\\\\\": null}, {\\\\\\"id\\\\\\": \\\\\\"651d3115-6242-4c44-a439-68cb757563df\\\\\\", \\\\\\"type\\\\\\": \\\\\\"Microsoft.DPrep.DropColumnsBlock\\\\\\", \\\\\\"arguments\\\\\\": {\\\\\\"columns\\\\\\": {\\\\\\"type\\\\\\": 0, \\\\\\"details\\\\\\": {\\\\\\"selectedColumns\\\\\\": [\\\\\\"Path\\\\\\"]}}}, \\\\\\"localData\\\\\\": {}, \\\\\\"isEnabled\\\\\\": true, \\\\\\"name\\\\\\": null, \\\\\\"annotation\\\\\\": null}, {\\\\\\"id\\\\\\": \\\\\\"448c613a-8d81-48be-890e-71b2bfec0a1e\\\\\\", \\\\\\"type\\\\\\": \\\\\\"Microsoft.DPrep.SetColumnTypesBlock\\\\\\", \\\\\\"arguments\\\\\\": {\\\\\\"columnConversion\\\\\\": [{\\\\\\"column\\\\\\": {\\\\\\"type\\\\\\": 2, \\\\\\"details\\\\\\": {\\\\\\"selectedColumn\\\\\\": \\\\\\"Path\\\\\\"}}, \\\\\\"typeProperty\\\\\\": 0}, {\\\\\\"column\\\\\\": {\\\\\\"type\\\\\\": 2, \\\\\\"details\\\\\\": {\\\\\\"selectedColumn\\\\\\": \\\\\\"age\\\\\\"}}, \\\\\\"typeProperty\\\\\\": 3}, {\\\\\\"column\\\\\\": {\\\\\\"type\\\\\\": 2, \\\\\\"details\\\\\\": {\\\\\\"selectedColumn\\\\\\": \\\\\\"anaemia\\\\\\"}}, \\\\\\"typeProperty\\\\\\": 2}, {\\\\\\"column\\\\\\": {\\\\\\"type\\\\\\": 2, \\\\\\"details\\\\\\": {\\\\\\"selectedColumn\\\\\\": \\\\\\"creatinine_phosphokinase\\\\\\"}}, \\\\\\"typeProperty\\\\\\": 2}, {\\\\\\"column\\\\\\": {\\\\\\"type\\\\\\": 2, \\\\\\"details\\\\\\": {\\\\\\"selectedColumn\\\\\\": \\\\\\"diabetes\\\\\\"}}, \\\\\\"typeProperty\\\\\\": 2}, {\\\\\\"column\\\\\\": {\\\\\\"type\\\\\\": 2, \\\\\\"details\\\\\\": {\\\\\\"selectedColumn\\\\\\": \\\\\\"ejection_fraction\\\\\\"}}, \\\\\\"typeProperty\\\\\\": 2}, {\\\\\\"column\\\\\\": {\\\\\\"type\\\\\\": 2, \\\\\\"details\\\\\\": {\\\\\\"selectedColumn\\\\\\": \\\\\\"high_blood_pressure\\\\\\"}}, \\\\\\"typeProperty\\\\\\": 2}, {\\\\\\"column\\\\\\": {\\\\\\"type\\\\\\": 2, \\\\\\"details\\\\\\": {\\\\\\"selectedColumn\\\\\\": \\\\\\"platelets\\\\\\"}}, \\\\\\"typeProperty\\\\\\": 3}, {\\\\\\"column\\\\\\": {\\\\\\"type\\\\\\": 2, \\\\\\"details\\\\\\": {\\\\\\"selectedColumn\\\\\\": \\\\\\"serum_creatinine\\\\\\"}}, \\\\\\"typeProperty\\\\\\": 3}, {\\\\\\"column\\\\\\": {\\\\\\"type\\\\\\": 2, \\\\\\"details\\\\\\": {\\\\\\"selectedColumn\\\\\\": \\\\\\"serum_sodium\\\\\\"}}, \\\\\\"typeProperty\\\\\\": 2}, {\\\\\\"column\\\\\\": {\\\\\\"type\\\\\\": 2, \\\\\\"details\\\\\\": {\\\\\\"selectedColumn\\\\\\": \\\\\\"sex\\\\\\"}}, \\\\\\"typeProperty\\\\\\": 2}, {\\\\\\"column\\\\\\": {\\\\\\"type\\\\\\": 2, \\\\\\"details\\\\\\": {\\\\\\"selectedColumn\\\\\\": \\\\\\"smoking\\\\\\"}}, \\\\\\"typeProperty\\\\\\": 2}, {\\\\\\"column\\\\\\": {\\\\\\"type\\\\\\": 2, \\\\\\"details\\\\\\": {\\\\\\"selectedColumn\\\\\\": \\\\\\"time\\\\\\"}}, \\\\\\"typeProperty\\\\\\": 2}, {\\\\\\"column\\\\\\": {\\\\\\"type\\\\\\": 2, \\\\\\"details\\\\\\": {\\\\\\"selectedColumn\\\\\\": \\\\\\"DEATH_EVENT\\\\\\"}}, \\\\\\"typeProperty\\\\\\": 2}]}, \\\\\\"localData\\\\\\": {}, \\\\\\"isEnabled\\\\\\": true, \\\\\\"name\\\\\\": null, \\\\\\"annotation\\\\\\": null}], \\\\\\"inspectors\\\\\\": [], \\\\\\"meta\\\\\\": {\\\\\\"savedDatasetId\\\\\\": \\\\\\"4db5ea7c-968e-4fc0-a256-61d246c577c5\\\\\\", \\\\\\"datasetType\\\\\\": \\\\\\"tabular\\\\\\", \\\\\\"subscriptionId\\\\\\": \\\\\\"a0a76bad-11a1-4a2d-9887-97a29122c8ed\\\\\\", \\\\\\"workspaceId\\\\\\": \\\\\\"4eda3621-5c55-44df-b29b-e4473297281a\\\\\\", \\\\\\"workspaceLocation\\\\\\": \\\\\\"southcentralus\\\\\\"}}\\", \\"activities\\": 0}',
   'EnableSubsampling': None,
   'runTemplate': 'AutoML',
   'azureml.runsource': 'automl',
@@ -122,16 +115,16 @@ BEST: The best observed score thus far.
   'root_attribution': 'automl',
   'attribution': 'AutoML',
   'Orchestrator': 'AutoML',
-  'CancelUri': 'https://southcentralus.experiments.azureml.net/jasmine/v1.0/subscriptions/976ee174-3882-4721-b90a-b5fef6b72f24/resourceGroups/aml-quickstarts-138652/providers/Microsoft.MachineLearningServices/workspaces/quick-starts-ws-138652/experimentids/9f373cb0-8d35-4815-8aea-47cb34b48815/cancel/AutoML_415e87b7-c932-44e2-9303-71d0e67f8df7',
+  'CancelUri': 'https://southcentralus.experiments.azureml.net/jasmine/v1.0/subscriptions/a0a76bad-11a1-4a2d-9887-97a29122c8ed/resourceGroups/aml-quickstarts-138754/providers/Microsoft.MachineLearningServices/workspaces/quick-starts-ws-138754/experimentids/43a09711-b227-4d5d-924f-1e4c9b07e2f0/cancel/AutoML_bad8b7b1-697e-402a-91c9-8730f9b52493',
   'ClientSdkVersion': '1.21.0',
   'snapshotId': '00000000-0000-0000-0000-000000000000',
-  'SetupRunId': 'AutoML_415e87b7-c932-44e2-9303-71d0e67f8df7_setup',
-  'SetupRunContainerId': 'dcid.AutoML_415e87b7-c932-44e2-9303-71d0e67f8df7_setup',
+  'SetupRunId': 'AutoML_bad8b7b1-697e-402a-91c9-8730f9b52493_setup',
+  'SetupRunContainerId': 'dcid.AutoML_bad8b7b1-697e-402a-91c9-8730f9b52493_setup',
   'FeaturizationRunJsonPath': 'featurizer_container.json',
-  'FeaturizationRunId': 'AutoML_415e87b7-c932-44e2-9303-71d0e67f8df7_featurize',
+  'FeaturizationRunId': 'AutoML_bad8b7b1-697e-402a-91c9-8730f9b52493_featurize',
   'ProblemInfoJsonString': '{"dataset_num_categorical": 0, "is_sparse": false, "subsampling": false, "dataset_classes": 2, "dataset_features": 12, "dataset_samples": 299, "single_frequency_class_detected": false}',
-  'ModelExplainRunId': 'AutoML_415e87b7-c932-44e2-9303-71d0e67f8df7_ModelExplain'},
- 'inputDatasets': [{'dataset': {'id': '9f6dcf6e-65fb-4f2a-bdba-acb22ddfe91e'}, 'consumptionDetails': {'type': 'RunInput', 'inputName': 'training_data', 'mechanism': 'Direct'}}],
+  'ModelExplainRunId': 'AutoML_bad8b7b1-697e-402a-91c9-8730f9b52493_ModelExplain'},
+ 'inputDatasets': [{'dataset': {'id': '4db5ea7c-968e-4fc0-a256-61d246c577c5'}, 'consumptionDetails': {'type': 'RunInput', 'inputName': 'training_data', 'mechanism': 'Direct'}}],
  'outputDatasets': [],
  'logFiles': {},
- 'submittedBy': 'ODL_User 138652'}
+ 'submittedBy': 'ODL_User 138754'}

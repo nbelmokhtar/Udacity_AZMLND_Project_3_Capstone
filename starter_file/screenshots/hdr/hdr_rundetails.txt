@@ -1,0 +1,31 @@
+RunId: HD_c54db12a-daac-4291-8e96-382b79119b65
+Web View: https://ml.azure.com/experiments/hdr_heart_failure_experiment/runs/HD_c54db12a-daac-4291-8e96-382b79119b65?wsid=/subscriptions/a0a76bad-11a1-4a2d-9887-97a29122c8ed/resourcegroups/aml-quickstarts-138754/workspaces/quick-starts-ws-138754
+
+Streaming azureml-logs/hyperdrive.txt
+=====================================
+
+"<START>[2021-02-13T00:29:01.386467][API][INFO]Experiment created<END>\n""<START>[2021-02-13T00:29:02.376288][GENERATOR][INFO]Trying to sample '4' jobs from the hyperparameter space<END>\n"<START>[2021-02-13T00:29:02.5223064Z][SCHEDULER][INFO]The execution environment is being prepared. Please be patient as it can take a few minutes.<END>"<START>[2021-02-13T00:29:02.703293][GENERATOR][INFO]Successfully sampled '4' jobs, they will soon be submitted to the execution target.<END>\n"
+
+Execution Summary
+=================
+RunId: HD_c54db12a-daac-4291-8e96-382b79119b65
+Web View: https://ml.azure.com/experiments/hdr_heart_failure_experiment/runs/HD_c54db12a-daac-4291-8e96-382b79119b65?wsid=/subscriptions/a0a76bad-11a1-4a2d-9887-97a29122c8ed/resourcegroups/aml-quickstarts-138754/workspaces/quick-starts-ws-138754
+
+{'runId': 'HD_c54db12a-daac-4291-8e96-382b79119b65',
+ 'target': 'my-cpu-cluster',
+ 'status': 'Completed',
+ 'startTimeUtc': '2021-02-13T00:29:01.150112Z',
+ 'endTimeUtc': '2021-02-13T00:38:19.051224Z',
+ 'properties': {'primary_metric_config': '{"name": "Accuracy", "goal": "maximize"}',
+  'resume_from': 'null',
+  'runTemplate': 'HyperDrive',
+  'azureml.runsource': 'hyperdrive',
+  'platform': 'AML',
+  'ContentSnapshotId': '822a42e6-add9-46ac-8db6-2cd7b3ff46a9',
+  'score': '0.7833333333333333',
+  'best_child_run_id': 'HD_c54db12a-daac-4291-8e96-382b79119b65_3',
+  'best_metric_status': 'Succeeded'},
+ 'inputDatasets': [],
+ 'outputDatasets': [],
+ 'logFiles': {'azureml-logs/hyperdrive.txt': 'https://mlstrg138754.blob.core.windows.net/azureml/ExperimentRun/dcid.HD_c54db12a-daac-4291-8e96-382b79119b65/azureml-logs/hyperdrive.txt?sv=2019-02-02&sr=b&sig=o5sOTtpu%2BXzrcZKGhNT6cJ%2BIzud3%2BwCZ%2F%2BpDv5bg1IY%3D&st=2021-02-13T00%3A28%3A26Z&se=2021-02-13T08%3A38%3A26Z&sp=r'},
+ 'submittedBy': 'ODL_User 138754'}

@@ -94,3 +94,8 @@ For AutoML :
 For HyperDrive :
 
 - Use Deep Learning models like ANNs and CNNs through Keras, TensorFlow, or PyTorch.
+
+For Dataset :
+
+- Perform feature engineering on the dataset.
+- Add more data.

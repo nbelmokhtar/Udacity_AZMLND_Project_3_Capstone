@@ -12,9 +12,9 @@ The starter files that we need to run this project are :
 
 - `hyperparameter_tuning.ipynb` : Jupyter Notebook file to train a model and perform hyperparameter tuning using HyperDrive.
 - `automl.ipynb` : Jupyter Notebook file to train a model using Automated ML. 
-- `train.py` : Script used in Hyperdrive
-- `score.py` : Script used to deploy the model
-- `heart_failure_clinical_records_dataset.csv` : The dataset
+- `train.py` : Script used in Hyperdrive.
+- `score.py` : Script used to deploy the model.
+- `heart_failure_clinical_records_dataset.csv` : The dataset.
 
 ## Dataset
 
@@ -75,10 +75,22 @@ We used 2 ways to access the data in the workspace :
 
 Here's a [screen recording](https://www.dropbox.com/s/yl9b4pqcduo3je3/nb-udacity-azmlnd-project-3.mp4?dl=0) that demonstrate :
 
-- A working model
-- Demo of the deployed  model
-- Demo of a sample request sent to the endpoint and its response
+- A working model.
+- Demo of the deployed  model.
+- Demo of a sample request sent to the endpoint and its response.
 
 ## Standout Suggestions
 
-Here are some suggestions for a whole bunch of additional things we can do with it.
+Here are some suggestions for a whole bunch of additional things we can do with this project.
+
+- Convert the model to ONNX format.
+- Deploy the model to the Edge using Azure IoT Edge.
+- Enable logging in the deployed web app.
+
+For AutoML :
+
+- Increase "experiment_timeout_minutes" in order to achieve better results and also opt for deep learning capability.
+
+For HyperDrive :
+
+- Use Deep Learning models like ANNs and CNNs through Keras, TensorFlow, or PyTorch.

@@ -24,15 +24,32 @@ We used the [Heart Failure Prediction dataset](https://www.kaggle.com/andrewmvd/
 
 Dataset from Davide Chicco, Giuseppe Jurman: Machine learning can predict survival of patients with heart failure from serum creatinine and ejection fraction alone. BMC Medical Informatics and Decision Making 20, 16 (2020).
 
-Heart failure is a common event caused by Cardiovascular diseases (CVDs) and this dataset contains 12 features that can be used to predict mortality by heart failure.
-
-01- age : Age of the patient (years) 02- anaemia : Decrease of red blood cells or hemoglobin (boolean) 03- creatinine_phosphokinase : Level of the CPK enzyme in the blood (mcg/L) 04- diabetes : If the patient has diabetes (boolean) 05- ejection_fraction : Percentage of blood leaving the heart at each contraction (percentage) 06- high_blood_pressure : If the patient has hypertension (boolean) 07- platelets : Platelets in the blood (kiloplatelets/mL) 08- serum_creatinine : Level of serum creatinine in the blood (mg/dL) 09- serum_sodium :Level of serum sodium in the blood (mEq/L) 10- sex : Woman or man (binary) 11- smoking : If the patient smokes or not (boolean) 12- time : Follow-up period (days)
-
 ### Task
-*TODO*: Explain the task you are going to be solving with this dataset and the features you will be using for it.
 
+Heart failure is a common event caused by Cardiovascular diseases (CVDs) and this dataset contains 12 features :
+
+01- age : Age of the patient (years) 
+02- anaemia : Decrease of red blood cells or hemoglobin (boolean) 
+03- creatinine_phosphokinase : Level of the CPK enzyme in the blood (mcg/L) 
+04- diabetes : If the patient has diabetes (boolean) 
+05- ejection_fraction : Percentage of blood leaving the heart at each contraction (percentage) 
+06- high_blood_pressure : If the patient has hypertension (boolean) 
+07- platelets : Platelets in the blood (kiloplatelets/mL) 
+08- serum_creatinine : Level of serum creatinine in the blood (mg/dL) 
+09- serum_sodium :Level of serum sodium in the blood (mEq/L) 
+10- sex : Woman or man (binary) 
+11- smoking : If the patient smokes or not (boolean) 
+12- time : Follow-up period (days)
+
+These 12 feaytures are used to predict mortality by heart failure indicated by a boolean value : DEATH_EVENT.
+ 
 ### Access
-*TODO*: Explain how you are accessing the data in your workspace.
+
+We uses 2 ways to access the data in the workspace :
+
+- In AutoML, we used Dataset.get_by_name() function to download dataset as a csv file and register it in the workspace.
+
+- For Hyperdrive, we used TabularDatasetFactory.from_delimited_files() in the train.py script to create a TabularDataset to represent tabular data in delimited [CSV file](https://raw.githubusercontent.com/nbelmokhtar/Udacity_AZMLND_Project_3_Capstone/master/starter_file/heart_failure_clinical_records_dataset.csv).
 
 ## Automated ML
 *TODO*: Give an overview of the `automl` settings and configuration you used for this experiment

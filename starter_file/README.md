@@ -72,10 +72,13 @@ We used 2 ways to access the data in the workspace :
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
+
+Here's a [screen recording](https://www.dropbox.com/s/yl9b4pqcduo3je3/nb-udacity-azmlnd-project-3.mp4?dl=0) that demonstrate :
+
 - A working model
 - Demo of the deployed  model
 - Demo of a sample request sent to the endpoint and its response
 
 ## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+
+Here are some suggestions for a whole bunch of additional things we can do with it.

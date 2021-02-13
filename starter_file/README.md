@@ -10,17 +10,17 @@ The diagram below shows the main steps followed to complete this project.
 
 The starter files that we need to run this project are :
 
-- hyperparameter_tuning.ipynb : Jupyter Notebook file to train a model and perform hyperparameter tuning using HyperDrive.
-- automl.ipynb : Jupyter Notebook file to train a model using Automated ML. 
-- train.py : Script used in Hyperdrive
-- score.py : Script used to deploy the model
-- heart_failure_clinical_records_dataset.csv : The dataset
+- `hyperparameter_tuning.ipynb` : Jupyter Notebook file to train a model and perform hyperparameter tuning using HyperDrive.
+- `automl.ipynb` : Jupyter Notebook file to train a model using Automated ML. 
+- `train.py` : Script used in Hyperdrive
+- `score.py` : Script used to deploy the model
+- `heart_failure_clinical_records_dataset.csv` : The dataset
 
 ## Dataset
 
 ### Overview
 
-We used the [Heart Failure Prediction dataset](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data) from Kaggle to build a classification model.
+We used the [Heart Failure Prediction dataset](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data) from `Kaggle` to build a classification model.
 
 Dataset from Davide Chicco, Giuseppe Jurman: Machine learning can predict survival of patients with heart failure from serum creatinine and ejection fraction alone. BMC Medical Informatics and Decision Making 20, 16 (2020).
 
@@ -28,28 +28,28 @@ Dataset from Davide Chicco, Giuseppe Jurman: Machine learning can predict surviv
 
 Heart failure is a common event caused by Cardiovascular diseases (CVDs) and this dataset contains 12 features :
 
-01- 'age' : Age of the patient (years)<br/> 
-02- anaemia : Decrease of red blood cells or hemoglobin (boolean)<br/> 
-03- creatinine_phosphokinase : Level of the CPK enzyme in the blood (mcg/L)<br/> 
-04- diabetes : If the patient has diabetes (boolean)<br/> 
-05- ejection_fraction : Percentage of blood leaving the heart at each contraction (percentage)<br/> 
-06- high_blood_pressure : If the patient has hypertension (boolean)<br/> 
-07- platelets : Platelets in the blood (kiloplatelets/mL)<br/> 
-08- serum_creatinine : Level of serum creatinine in the blood (mg/dL)<br/> 
-09- serum_sodium :Level of serum sodium in the blood (mEq/L)<br/> 
-10- sex : Woman or man (binary)<br/> 
-11- smoking : If the patient smokes or not (boolean)<br/> 
-12- time : Follow-up period (days)<br/>
+01- `age` : Age of the patient (years)<br/> 
+02- `anaemia` : Decrease of red blood cells or hemoglobin (boolean)<br/> 
+03- `creatinine_phosphokinase` : Level of the CPK enzyme in the blood (mcg/L)<br/> 
+04- `diabetes` : If the patient has diabetes (boolean)<br/> 
+05- `ejection_fraction` : Percentage of blood leaving the heart at each contraction (percentage)<br/> 
+06- `high_blood_pressure` : If the patient has hypertension (boolean)<br/> 
+07- `platelets` : Platelets in the blood (kiloplatelets/mL)<br/> 
+08- `serum_creatinine` : Level of serum creatinine in the blood (mg/dL)<br/> 
+09- `serum_sodium` :Level of serum sodium in the blood (mEq/L)<br/> 
+10- `sex` : Woman or man (binary)<br/> 
+11- `smoking` : If the patient smokes or not (boolean)<br/> 
+12- `time` : Follow-up period (days)<br/>
 
-These 12 feaytures are used to predict mortality by heart failure indicated by a boolean value : DEATH_EVENT.
+These 12 feaytures are used to predict mortality by heart failure indicated by a boolean value : `DEATH_EVENT`.
  
 ### Access
 
-We uses 2 ways to access the data in the workspace :
+We used 2 ways to access the data in the workspace :
 
-- In AutoML, we used Dataset.get_by_name() function to download dataset as a csv file and register it in the workspace.
+- In AutoML : we used `Dataset.get_by_name()` function to download dataset as a csv file and register it in the workspace.
 
-- For Hyperdrive, we used TabularDatasetFactory.from_delimited_files() in the train.py script to create a TabularDataset to represent tabular data in delimited [CSV file](https://raw.githubusercontent.com/nbelmokhtar/Udacity_AZMLND_Project_3_Capstone/master/starter_file/heart_failure_clinical_records_dataset.csv).
+- For Hyperdrive : `TabularDatasetFactory.from_delimited_files()` in the `train.py` script to create a TabularDataset to represent tabular data in delimited [CSV file](https://raw.githubusercontent.com/nbelmokhtar/Udacity_AZMLND_Project_3_Capstone/master/starter_file/heart_failure_clinical_records_dataset.csv).
 
 ## Automated ML
 *TODO*: Give an overview of the `automl` settings and configuration you used for this experiment

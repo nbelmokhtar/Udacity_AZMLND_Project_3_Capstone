@@ -96,6 +96,9 @@ We would like to tune more config parameters; increasing experiment timeout minu
 
 ## Hyperparameter Tuning
 
+In this experiment, we used Logistic Regression from SciKit Learn because the prediction outcome in this case is binary. 
+The goal consists of optimizing (tuning) the hyperparameters of a logistic regression binary classification model using HyperDrive. We start by setting up a training script 'train.py' were we create a dataset, train and evaluate a logistic regression model from Scikit-learn. Then, we used Jupyter Notebook and Azure ML Python SDK to get the workspace and experiment objects running, and build the training pipeline - from creating a computer cluster, to HyperDrive, to runnning the 'train.py'.
+
 We used RandomParameterSampling method over the hyperparameter search space to randomly select values for C (choice among discrete values 0.01, 1.0, 3.0) and max_iter (choice among discrete values 50, 150, 200) hyperparameters. We used a limited number of parameters to make the experiment complete faster. Random sampling supports both discrete and continuous hyperparameters and allows us to refine the search space to improve results.
 
 We also used BanditPolicy which defines an early termination policy based on slack_factor=0.1 and evaluation_interval=2. The slack_factor is the ratio used to calculate the allowed distance from the best performing experiment run. The evaluation_interval is the frequency for applying the policy.

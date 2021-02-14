@@ -55,7 +55,7 @@ We used 2 ways to access the data in the workspace :
 
 An Azure Auto ML was performed to predict if the patient deceased during the follow-up period (DEATH_EVENT : boolean), based on the 12 clinical features. We didn't explicitly specified either a validation_data or n_cross_validation parameter, automated ML applies default techniques depending on the number of rows provided in the single training_data=dataset. Dataset is less than 1,000 rows, 10 folds are used. The Auto ML settings and configuration we used for this experiment are shown below :
 
-`
+```python
 # AutoML settings
 automl_settings = {
     "experiment_timeout_minutes": 30,
@@ -73,7 +73,7 @@ automl_config = AutoMLConfig(compute_target=compute_target,
                              debug_log = "automl_errors.log",
                              **automl_settings
 )
-`
+```
 
 ### Results
 

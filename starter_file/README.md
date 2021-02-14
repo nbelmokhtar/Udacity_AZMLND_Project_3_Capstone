@@ -188,6 +188,8 @@ print(scoring_uri)
 
 service.update(enable_app_insights=True)
 ```
+![Enpoint 01](https://github.com/nbelmokhtar/Udacity_AZMLND_Project_3_Capstone/blob/master/starter_file/screenshots/automl/010.PNG)
+![Enpoint 02](https://github.com/nbelmokhtar/Udacity_AZMLND_Project_3_Capstone/blob/master/starter_file/screenshots/automl/011.PNG)
 
 ## Screen Recording
 

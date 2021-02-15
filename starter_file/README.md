@@ -191,6 +191,14 @@ service.update(enable_app_insights=True)
 ![Enpoint 01](https://github.com/nbelmokhtar/Udacity_AZMLND_Project_3_Capstone/blob/master/starter_file/screenshots/automl/010.PNG)
 ![Enpoint 02](https://github.com/nbelmokhtar/Udacity_AZMLND_Project_3_Capstone/blob/master/starter_file/screenshots/automl/011.PNG)
 
+Once the model is deployed as a web service a REST API endpoint is created. We can send a request to the web service we deployed to test it. 
+
+![Enpoint 02](https://github.com/nbelmokhtar/Udacity_AZMLND_Project_3_Capstone/blob/master/starter_file/screenshots/automl/012.PNG)
+
+This example demonstrates how to consume the Endpoint using the Python code provided by Azure ML Studio in the Endpoint itself. 
+
+![Consume 02](https://github.com/nbelmokhtar/Udacity_AZMLND_Project_3_Capstone/blob/master/starter_file/screenshots/automl/013.PNG)
+
 ## Screen Recording
 
 Here's a [screen recording](https://www.dropbox.com/s/yl9b4pqcduo3je3/nb-udacity-azmlnd-project-3.mp4?dl=0) that demonstrate :

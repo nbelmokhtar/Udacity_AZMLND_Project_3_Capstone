@@ -167,6 +167,8 @@ model = remote_run.register_model(model_name=model_name, description=description
 print(model.name, model.id, model.version, sep='\t')
 ```
 ```python
+#create an inference config and deploy the model as a web service on Azure Container Instance
+
 environment = Environment.get(ws, "AzureML-AutoML")
 
 inference_config = InferenceConfig(entry_script='score.py',
@@ -197,9 +199,7 @@ Once the model is deployed as a web service a REST API endpoint is created. We c
 
 This example demonstrates how to consume the Endpoint using the Python code provided by Azure ML Studio in the Endpoint itself. 
 
-![Consume 01](https://github.com/nbelmokhtar/Udacity_AZMLND_Project_3_Capstone/blob/master/starter_file/screenshots/automl/013.PNG)
-
-On Jupyter Notebook :
+*On Jupyter Notebook :
 
 ```python
 import urllib.request
@@ -271,9 +271,10 @@ except urllib.error.HTTPError as error:
 
 b'"{\\"result\\": [1, 0]}"'
 
-On Git Bash :
 
-![Consume 02](https://github.com/nbelmokhtar/Udacity_AZMLND_Project_3_Capstone/blob/master/starter_file/screenshots/automl/014.PNG)
+*On Git Bash :
+
+![Consume 01](https://github.com/nbelmokhtar/Udacity_AZMLND_Project_3_Capstone/blob/master/starter_file/screenshots/automl/013.PNG)
 
 ## Screen Recording
 

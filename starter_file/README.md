@@ -199,7 +199,7 @@ Once the model is deployed as a web service a REST API endpoint is created. We c
 
 This example demonstrates how to consume the Endpoint using the Python code provided by Azure ML Studio in the Endpoint itself. 
 
-####*On Jupyter Notebook* :
+#### On Jupyter Notebook :
 
 ```python
 import urllib.request
@@ -272,7 +272,7 @@ except urllib.error.HTTPError as error:
 b'"{\\"result\\": [1, 0]}"'
 
 
-####*On Git Bash* :
+#### On Git Bash :
 
 ![Consume 01](https://github.com/nbelmokhtar/Udacity_AZMLND_Project_3_Capstone/blob/master/starter_file/screenshots/automl/013.PNG)
 

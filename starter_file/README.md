@@ -197,7 +197,83 @@ Once the model is deployed as a web service a REST API endpoint is created. We c
 
 This example demonstrates how to consume the Endpoint using the Python code provided by Azure ML Studio in the Endpoint itself. 
 
-![Consume 02](https://github.com/nbelmokhtar/Udacity_AZMLND_Project_3_Capstone/blob/master/starter_file/screenshots/automl/013.PNG)
+![Consume 01](https://github.com/nbelmokhtar/Udacity_AZMLND_Project_3_Capstone/blob/master/starter_file/screenshots/automl/013.PNG)
+
+On Jupyter Notebook :
+
+```python
+import urllib.request
+import json
+import os
+import ssl
+
+def allowSelfSignedHttps(allowed):
+    # bypass the server certificate verification on client side
+    if allowed and not os.environ.get('PYTHONHTTPSVERIFY', '') and getattr(ssl, '_create_unverified_context', None):
+        ssl._create_default_https_context = ssl._create_unverified_context
+
+allowSelfSignedHttps(True) # this line is needed if you use self-signed certificate in your scoring service.
+
+data = {
+    "data":
+    [
+        {
+            'age': "75",
+            'anaemia': "0",
+            'creatinine_phosphokinase': "582",
+            'diabetes': "0",
+            'ejection_fraction': "20",
+            'high_blood_pressure': "1",
+            'platelets': "265000",
+            'serum_creatinine': "1.9",
+            'serum_sodium': "130",
+            'sex': "1",
+            'smoking': "0",
+            'time': "4",
+        },
+        {
+            'age': "42",
+            'anaemia': "0",
+            'creatinine_phosphokinase': "320",
+            'diabetes': "0",
+            'ejection_fraction': "31",
+            'high_blood_pressure': "0",
+            'platelets': "221000",
+            'serum_creatinine': "1",
+            'serum_sodium': "130",
+            'sex': "1",
+            'smoking': "0",
+            'time': "144",
+        },
+    ],
+}
+
+body = str.encode(json.dumps(data))
+
+url = 'http://97794ab3-9cbe-4a65-a0c4-eca9b82214a4.southcentralus.azurecontainer.io/score'
+api_key = '' # Replace this with the API key for the web service
+headers = {'Content-Type':'application/json', 'Authorization':('Bearer '+ api_key)}
+
+req = urllib.request.Request(url, body, headers)
+
+try:
+    response = urllib.request.urlopen(req)
+
+    result = response.read()
+    print(result)
+except urllib.error.HTTPError as error:
+    print("The request failed with status code: " + str(error.code))
+
+    # Print the headers - they include the requert ID and the timestamp, which are useful for debugging the failure
+    print(error.info())
+    print(json.loads(error.read().decode("utf8", 'ignore')))
+```
+
+b'"{\\"result\\": [1, 0]}"'
+
+On Git Bash :
+
+![Consume 02](https://github.com/nbelmokhtar/Udacity_AZMLND_Project_3_Capstone/blob/master/starter_file/screenshots/automl/014.PNG)
 
 ## Screen Recording
 
